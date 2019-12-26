@@ -3,6 +3,7 @@ import { ɵmarkDirty, Type } from '@angular/core';
 export function Δ(target, key: string, descriptor?: PropertyDescriptor) {
   const _key = Symbol();
 
+  console.log('here');
   Object.defineProperty(target, key, {
     get() {
       return this[_key];
