@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, VERSION, ɵmarkDirty, Type } from '@angular/core';
+import { Δ } from './reactive.decorator';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'my-app',
+  template: `
+    <app-child></app-child>
+    <app-child></app-child>
+  `,
 })
 export class AppComponent {
-  title = 'decorator-demo';
+
 }
